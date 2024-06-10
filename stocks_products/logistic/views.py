@@ -22,4 +22,4 @@ class StockViewSet(ModelViewSet):
     # при необходимости добавьте параметры фильтрации
 
     filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
-    filterset_fields = ['id']
+    filterset_fields = ['id', 'products']
